@@ -20,11 +20,11 @@
             to="/Product"
             >Product</router-link
           >
-          <router-link
+          <!-- <router-link
             class="text-[#888888] text-base font-normal hover:text-[#286963] active:bg-[#F6FDFC] focus:bg-[#F6FDFC] py-1 px-2 rounded"
             to="/Solutions"
             >Solutions</router-link
-          >
+          > -->
           <router-link
             class="text-[#888888] text-base font-normal hover:text-[#286963] active:bg-[#F6FDFC] focus:bg-[#F6FDFC] py-1 px-2 rounded"
             to="/Resources"
@@ -34,6 +34,12 @@
             class="text-[#888888] text-base font-normal hover:text-[#286963] active:bg-[#F6FDFC] focus:bg-[#F6FDFC] py-1 px-2 rounded"
             to="/Company"
             >Company</router-link
+          >
+
+          <router-link
+            class="text-[#888888] text-base font-normal hover:text-[#286963] active:bg-[#F6FDFC] focus:bg-[#F6FDFC] py-1 px-2 rounded"
+            to="/help"
+            >Help Center</router-link
           >
           <router-link
             class="text-[#888888] text-base font-normal hover:text-[#286963] active:bg-[#F6FDFC] focus:bg-[#F6FDFC] py-1 px-2 rounded"

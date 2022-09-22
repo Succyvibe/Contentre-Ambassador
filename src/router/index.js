@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Ambassador from "../views/Ambassador.vue";
 import PrevAmb from "../views/PrevAmb.vue";
+import HelpCenter from "../views/HelpCenter.vue";
 // import Product from "../views/Product.vue";
 // import Solutions from "../views/Solutions.vue";
 // import Resources from "../views/Resources.vue";
@@ -20,13 +21,13 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Product.vue"),
   },
-  {
-    path: "/solutions",
-    name: "solutions",
+  // {
+  //   path: "/solutions",
+  //   name: "solutions",
 
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Solutions.vue"),
-  },
+  //   component: () =>
+  //     import(/* webpackChunkName: "about" */ "../views/Start.vue"),
+  // },
   {
     path: "/resources",
     name: "resources",
@@ -58,6 +59,42 @@ const routes = [
     path: "/prevamb",
     name: "PrevAmb",
     component: PrevAmb,
+  },
+  {
+    path: "/Help",
+    name: "HelpCenter",
+    component: HelpCenter,
+  },
+
+  {
+    path: "/start",
+    name: "start",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Start.vue"),
+  },
+  {
+    path: "/sell",
+    name: "sell",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Sell.vue"),
+  },
+  {
+    path: "/manage",
+    name: "manage",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Manage.vue"),
+  },
+  {
+    path: "/grow",
+    name: "grow",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Grow.vue"),
+  },
+  {
+    path: "/legal",
+    name: "legal",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Legal.vue"),
   },
 ];
 
