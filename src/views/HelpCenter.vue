@@ -27,11 +27,11 @@
         <div class="grid md:grid-cols-4 gap-4">
           <router-link
             to="/start"
-            class="border-2 rounded-lg px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-[#286963] transition relative"
+            class="card border-2 rounded-lg px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-gradient-to-t from-[#19534e] via-[#5bcfc6] to-[#286963] transition relative"
           >
             <img class="w-14 mb-8" src="../assets/images/grow.png" alt="" />
             <div
-              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-[#286963]"
+              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-transparent"
             >
               <h3
                 class="font-semibold text-4xl text-black w-[100%] absolute transition duration-500 mb-10"
@@ -43,11 +43,11 @@
 
           <router-link
             to="/sell"
-            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-[#286963] transition relative"
+            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-gradient-to-t from-[#19534e] via-[#5bcfc6] to-[#286963] transition relative"
           >
             <img class="w-14 mb-8" src="../assets/images/grow.png" alt="" />
             <div
-              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-[#286963]"
+              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-transparent"
             >
               <h3
                 class="font-semibold text-4xl text-black w-[100%] absolute transition duration-500 mb-10"
@@ -58,11 +58,11 @@
           </router-link>
           <router-link
             to="/manage"
-            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-[#286963] transition relative"
+            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-gradient-to-t from-[#19534e] via-[#5bcfc6] to-[#286963] transition relative"
           >
             <img class="w-14 mb-8" src="../assets/images/grow.png" alt="" />
             <div
-              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-[#286963]"
+              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-transparent"
             >
               <h3
                 class="font-semibold text-4xl text-black w-[100%] absolute transition duration-500 mb-10"
@@ -73,11 +73,11 @@
           </router-link>
           <router-link
             to="/grow"
-            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-[#286963] transition relative"
+            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:hover:bg-gradient-to-t from-[#19534e] via-[#5bcfc6] to-[#286963] transition relative"
           >
             <img class="w-14 mb-8" src="../assets/images/grow.png" alt="" />
             <div
-              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-[#286963]"
+              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-transparent"
             >
               <h3
                 class="font-semibold text-4xl text-black w-[100%] absolute transition duration-500 mb-10"
@@ -88,11 +88,11 @@
           </router-link>
           <router-link
             to="/legal"
-            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:bg-[#286963] transition relative"
+            class="border-2 rounded-l px-10 pt-24 md:pt-28 md:pb-24 pb-10 hover:hover:bg-gradient-to-t from-[#19534e] via-[#5bcfc6] to-[#286963] transition relative"
           >
             <img class="w-14 mb-8" src="../assets/images/grow.png" alt="" />
             <div
-              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-[#286963]"
+              class="layer bg-transparent h-[100%] w-[100%] absolute top-0 left-0 transition duration-500 rounded-lg hover:bg-transparent"
             >
               <h3
                 class="font-semibold text-4xl text-black w-[100%] absolute transition duration-500 mb-10"
@@ -229,5 +229,10 @@ export default {
   bottom: 10%;
   opacity: 1;
   color: white;
+}
+
+.card:hover {
+  /* background: linear-gradient(to right, #5bcfc6, #ff416c, #286963) no-repeat 0 0 /
+    /* cover; */
 }
 </style>
