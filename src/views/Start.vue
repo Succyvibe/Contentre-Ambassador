@@ -31,8 +31,14 @@
         <!-- left-col -->
         <div class="border-r-2 flex-initial w-[20%]">
           <ul class="mb-10">
-            <li class="mb-5 text-lg font-semibold"><a href="#">Start</a></li>
-            <li><a class="text-lg" href="#">Intro to paddle</a></li>
+            <li class="mb-5 text-lg font-semibold">
+              <button @click="showStart">Start</button>
+            </li>
+            <li>
+              <router-link class="text-lg" :to="{ name: 'intro' }"
+                >Intro to paddle</router-link
+              >
+            </li>
             <li><a class="text-lg" href="#">Set up Paddle</a></li>
             <li><a class="text-lg" href="#">Account Verification</a></li>
           </ul>
@@ -73,7 +79,7 @@
 
         <!-- Right-col -->
         <div class="flex-initial w-[80%]">
-          <div class="max-w-[70%] mx-auto">
+          <div v-if="isShowStart" class="max-w-[70%] mx-auto">
             <div>
               <h1 class="md:text-5xl text-gray-800 font-semibold mb-5">
                 Start
@@ -140,6 +146,18 @@ export default {
   name: "Solutions",
   components: {
     SearchBar,
+  },
+
+  data() {
+    return {
+      isShowStart: false,
+    };
+  },
+
+  methods: {
+    showStart() {
+      this.isShowStart = !this.isShowStart;
+    },
   },
 };
 </script>
